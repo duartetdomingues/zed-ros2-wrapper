@@ -1405,6 +1405,8 @@ void ZedCamera::getPosTrackingParams()
     mPosTrkMode = sl::POSITIONAL_TRACKING_MODE::GEN_1;
   } else if (pos_trk_mode == "GEN_2") {
     mPosTrkMode = sl::POSITIONAL_TRACKING_MODE::GEN_2;
+  } else if (pos_trk_mode == "GEN_3") {
+    mPosTrkMode = sl::POSITIONAL_TRACKING_MODE::GEN_3;
   } else {
     RCLCPP_WARN_STREAM(
       get_logger(),
